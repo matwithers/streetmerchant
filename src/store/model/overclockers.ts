@@ -19,47 +19,89 @@ export const Overclockers: Store = {
   },
   links: [
     {
-      brand: 'test:brand',
-      model: 'test:model',
-      series: 'test:series',
+      brand: 'zotac',
+      model: 'trinity',
+      series: '3070ti',
       url:
-        'https://www.overclockers.co.uk/gigabyte-geforce-rtx-2060-oc-rev2-6144mb-gddr6-pci-express-graphics-card-gx-1bj-gi.html',
+        'https://www.overclockers.co.uk/zotac-geforce-rtx-3070-ti-trinity-8gb-gddr6x-pci-express-graphics-card-gx-12p-zt.html',
     },
     {
-      brand: 'amd',
-      model: '5600x',
-      series: 'ryzen5600',
+      brand: 'zotac',
+      model: 'amp holo',
+      series: '3070ti',
       url:
-        'https://www.overclockers.co.uk/amd-ryzen-5-5600x-six-core-4.6ghz-socket-am4-processor-retail-cp-3cc-am.html',
+        'https://www.overclockers.co.uk/zotac-geforce-rtx-3070-ti-amp-holo-8gb-gddr6x-pci-express-graphics-card-gx-12q-zt.html',
     },
     {
-      brand: 'amd',
-      model: '5800x',
-      series: 'ryzen5800',
+      brand: 'asus',
+      model: 'strix oc',
+      series: '3070ti',
       url:
-        'https://www.overclockers.co.uk/amd-ryzen-7-5800x-eight-core-4.7ghz-socket-am4-processor-retail-cp-3cb-am.html',
+        'https://www.overclockers.co.uk/asus-geforce-rtx-3070-ti-rog-strix-oc-8gb-gddr6-pci-express-graphics-card-gx-46j-as.html',
     },
     {
-      brand: 'amd',
-      model: '5900x',
-      series: 'ryzen5900',
+      brand: 'zotac',
+      model: 'trinity oc',
+      series: '3070ti',
       url:
-        'https://www.overclockers.co.uk/amd-ryzen-9-5900x-twelve-core-4.8ghz-socket-am4-processor-retail-cp-3ca-am.html',
+        'https://www.overclockers.co.uk/zotac-geforce-rtx-3070-ti-trinity-oc-8gb-gddr6x-pci-express-graphics-card-gx-12w-zt.html',
     },
     {
-      brand: 'amd',
-      model: '5950x',
-      series: 'ryzen5950',
+      brand: 'palit',
+      model: 'gamerock',
+      series: '3070ti',
       url:
-        'https://www.overclockers.co.uk/amd-ryzen-9-5950x-sixteen-core-4.9ghz-socket-am4-processor-retail-cp-3c9-am.html',
+        'https://www.overclockers.co.uk/palit-geforce-rtx-3070-ti-gamerock-8gb-gddr6-pci-express-graphics-card-gx-066-pl.html',
     },
-	{
-	  brand: 'zotac',
-	  model: 'trinity',
-	  series: '3070ti',
-	  url:
-	    'https://www.overclockers.co.uk/zotac-geforce-rtx-3070-ti-trinity-8gb-gddr6x-pci-express-graphics-card-gx-12p-zt.html',
-	},
+    {
+      brand: 'gigabyte',
+      model: 'master',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/gigabyte-aorus-geforce-rtx-3070-ti-master-8gb-gddr6x-pci-express-graphics-card-gx-1dv-gi.html',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'eagle',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/gigabyte-geforce-rtx-3070-ti-eagle-8gb-gddr6x-pci-express-graphics-card-gx-1du-gi.html',
+    },
+    {
+      brand: 'palit',
+      model: 'gamerock oc',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/palit-geforce-rtx-3070-ti-gamerock-oc-8gb-gddr6-pci-express-graphics-card-gx-068-pl.html',
+    },
+    {
+      brand: 'asus',
+      model: 'tuf oc',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/asus-geforce-rtx-3070-ti-tuf-oc-8gb-gddr6-pci-express-graphics-card-gx-46k-as.html',
+    },
+    {
+      brand: 'palit',
+      model: 'gaming pro',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/palit-geforce-rtx-3070-ti-gaming-pro-8gb-gddr6-pci-express-graphics-card-gx-067-pl.html',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'gaming oc',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/gigabyte-geforce-rtx-3070-ti-gaming-oc-8gb-gddr6x-pci-express-graphics-card-gx-1dw-gi.html',
+    },
+    {
+      brand: 'msi',
+      model: 'suprim x',
+      series: '3070ti',
+      url:
+        'https://www.overclockers.co.uk/msi-geforce-rtx-3070-ti-suprim-x-8gb-gddr6x-pci-express-graphics-card-gx-37j-ms.html',
+    },
   ],
   linksBuilder: {
     builder: getProductLinksBuilder({
@@ -69,59 +111,6 @@ export const Overclockers: Store = {
       titleSelector: '.producttitles',
     }),
     urls: [
-      {
-        series: 'rx6800',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/amd/radeon-rx-6800-series',
-      },
-      {
-        series: 'rx6800xt',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/amd/radeon-rx-6800-xt-series',
-      },
-      {
-        series: 'rx6900xt',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/amd/radeon-rx-6900-xt-series',
-      },
-      {
-        series: '3060',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3060',
-      },
-      {
-        series: '3060ti',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3060-ti',
-      },
-      {
-        series: '3070',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3070',
-      },
-      {
-        series: '3070ti',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3070-ti',
-      },
-      {
-        series: '3080',
-        // Need to add support to detect pagination so this can be dynamically detected
-        url: [
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080',
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080?p=2',
-        ],
-      },
-      {
-        series: '3080ti',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080-ti',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3090',
-      },
     ],
   },
   name: 'overclockers',

@@ -78,23 +78,23 @@ async function getCaptchaPayloadAsync(
   );
   logger.debug(`using '${captureType}' capture method`);
   const challengeElement = await page.$(challengeElementSelector);
-  switch (captureType.toLowerCase()) {
-    case 'image':
-      await challengeElement?.screenshot({path: challengeFileName});
-      captchaPayload = {
-        content: challengeFileName,
-        type: 'image',
-      };
-      break;
-    case 'link':
-      captchaPayload = {
-        content: await challengeElement?.evaluate(img => img.src),
-        type: 'text',
-      };
-      break;
-    default:
-      logger.error(`unknown captcha capture type: ${captureType}`);
-  }
+  // switch (captureType.toLowerCase()) {
+  //   case 'image':
+  //     await challengeElement?.screenshot({path: challengeFileName});
+  //     captchaPayload = {
+  //       content: challengeFileName,
+  //       type: 'image',
+  //     };
+  //     break;
+  //   case 'link':
+  //     captchaPayload = {
+  //       content: await challengeElement?.evaluate(img => img.src),
+  //       type: 'text',
+  //     };
+  //     break;
+  //   default:
+  //     logger.error(`unknown captcha capture type: ${captureType}`);
+  // }
   return captchaPayload;
 }
 

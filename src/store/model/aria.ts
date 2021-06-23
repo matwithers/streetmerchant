@@ -19,18 +19,53 @@ export const Aria: Store = {
   },
   links: [
     {
-      brand: 'test:brand',
-      model: 'test:model',
-      series: 'test:series',
+      brand: 'asus',
+      model: 'strix oc',
+      series: '3070ti',
       url:
-        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+2060+Super/Gigabyte+NVIDIA+GeForce+RTX+2060+SUPER+8GB+WINDFORCE+OC+Turing+Graphics+Card+%2B+RTX+Bundle%21?productId=71541',
+        'https://www.aria.co.uk/SuperSpecials/Other+products/ASUS+NVIDIA+GeForce+RTX+3070+Ti+8GB+ROG+Strix+OC+Ampere+Graphics+Card+?productId=73506',
     },
     {
-      brand: 'amd',
-      model: '5950x',
-      series: 'ryzen5950',
+      brand: 'msi',
+      model: 'suprim x',
+      series: '3070ti',
       url:
-        'https://www.aria.co.uk/Products/Components/Processors/AMD+CPUs/Ryzen+9+-+Socket+AM4/AMD+Ryzen+9+5950X+16+Core+AM4+CPU%2FProcessor?productId=72868',
+        'https://www.aria.co.uk/SuperSpecials/Other+products/MSI+NVIDIA+GeForce+RTX+3070+Ti+8GB+SUPRIM+X+Ampere+Graphics+Card?productId=73512',
+    },
+    {
+      brand: 'asus',
+      model: 'tuf oc',
+      series: '3070ti',
+      url:
+        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti/ASUS+NVIDIA+GeForce+RTX+3070+Ti+8GB+TUF+GAMING+OC+Ampere+Graphics+Card?productId=73524',
+    },
+    {
+      brand: 'asus',
+      model: 'strix',
+      series: '3070ti',
+      url:
+        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti/ASUS+NVIDIA+GeForce+RTX+3070+Ti+8GB+ROG+Strix+Ampere+Graphics+Card?productId=73523',
+    },
+    {
+      brand: 'asus',
+      model: 'strix oc',
+      series: '3070ti',
+      url:
+        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti/ASUS+NVIDIA+GeForce+RTX+3070+Ti+8GB+ROG+Strix+OC+Ampere+Graphics+Card?productId=73522',
+    },
+    {
+      brand: 'msi',
+      model: 'suprim x',
+      series: '3070ti',
+      url:
+        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti/MSI+NVIDIA+GeForce+RTX+3070+Ti+8GB+SUPRIM+X+Ampere+Graphics+Card?productId=73521',
+    },
+    {
+      brand: 'msi',
+      model: 'ventus 3x oc',
+      series: '3070ti',
+      url:
+        'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti/MSI+NVIDIA+GeForce+RTX+3070+Ti+8GB+VENTUS+3X+OC+Ampere+Graphics+Card?productId=73519',
     },
   ],
   linksBuilder: {
@@ -40,41 +75,6 @@ export const Aria: Store = {
       titleSelector: 'strong > a[href]',
     }),
     urls: [
-      {
-        series: '3060',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3060',
-      },
-      {
-        series: '3060ti',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3060+Ti',
-      },
-      {
-        series: '3070',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070',
-      },
-      {
-        series: '3070ti',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti',
-      },
-      {
-        series: '3080',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3080',
-      },
-      {
-        series: '3080ti',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3080i+Ti',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3090',
-      },
     ],
   },
   name: 'aria',

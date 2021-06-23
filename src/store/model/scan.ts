@@ -4,6 +4,7 @@ import {getProductLinksBuilder} from './helpers/card';
 export const Scan: Store = {
   currency: '£',
   disableAdBlocker: true,
+  minPageSleep: 60000,
   labels: {
     captcha: [
       {
@@ -26,51 +27,137 @@ export const Scan: Store = {
   },
   links: [
     {
-      brand: 'test:brand',
-      model: 'test:model',
-      series: 'test:series',
+      brand: 'gigabyte',
+      model: 'eagle',
+      series: '3070ti',
       url:
-        'https://www.scan.co.uk/products/msi-geforce-rtx-2060-ventus-xs-oc-6gb-gddr6-vr-ready-graphics-card-1920-core-1710mhz-boost',
+        'https://www.scan.co.uk/products/gigabyte-nvidia-geforce-rtx-3070-ti-eagle-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1770mhz',
     },
     {
-      brand: 'sony',
-      model: 'ps5 console',
-      series: 'sonyps5c',
-      url: 'https://www.scan.co.uk/products/playstation-5-console',
-    },
-    {
-      brand: 'sony',
-      model: 'ps5 digital',
-      series: 'sonyps5de',
-      url: 'https://www.scan.co.uk/products/playstation-5-digital-edition',
-    },
-    {
-      brand: 'amd',
-      model: '5600x',
-      series: 'ryzen5600',
+      brand: 'palit',
+      model: 'gaming pro',
+      series: '3070ti',
       url:
-        'https://www.scan.co.uk/products/amd-ryzen-5-5600x-am4-zen-3-6-core-12-thread-37ghz-46ghz-turbo-35mb-cache-pcie-40-65w-cpu',
+        'https://www.scan.co.uk/products/palit-nvidia-geforce-rtx-3070-ti-gamingpro-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1575mhz-gp',
     },
     {
-      brand: 'amd',
-      model: '5800x',
-      series: 'ryzen5800',
+      brand: 'zotac',
+      model: 'trinity',
+      series: '3070ti',
       url:
-        'https://www.scan.co.uk/products/amd-ryzen-7-5800x-am4-zen-3-8-core-16-thread-38ghz-47ghz-turbo-36mb-cache-pcie-40-105w-cpu',
+        'https://www.scan.co.uk/products/zotac-nvidia-geforce-rtx-3070-ti-trinity-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1770mhz-boos',
     },
     {
-      brand: 'amd',
-      model: '5900x',
-      series: 'ryzen5900',
+      brand: 'palit',
+      model: 'gamerock',
+      series: '3070ti',
       url:
-        'https://www.scan.co.uk/products/amd-ryzen-9-5900x-am4-zen-3-12-core-24-thread-37ghz-48ghz-turbo-70mb-cache-pcie-40-105w-cpu',
+        'https://www.scan.co.uk/products/palit-nvidia-geforce-rtx-3070-ti-gamerock-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1575mhz-gpu',
     },
     {
-      brand: 'amd',
-      model: '5950x',
-      series: 'ryzen5950',
+      brand: 'asus',
+      model: 'tuf',
+      series: '3070ti',
       url:
-        'https://www.scan.co.uk/products/amd-ryzen-9-5950x-am4-zen-3-16-core-32-thread-34ghz-49ghz-turbo-72mb-cache-pcie-40-105w-cpu',
+        'https://www.scan.co.uk/products/asus-nvidia-geforce-rtx-3070-ti-tuf-gaming-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1770mhz-bo',
+    },
+    {
+      brand: 'palit',
+      model: 'gamerock oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/palit-nvidia-geforce-rtx-3070-ti-gamerock-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1575mhzo',
+    },
+    {
+      brand: 'evga',
+      model: 'ftw3 ultra',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/evga-nvidia-geforce-rtx-3070-ti-ftw3-ultra-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1580mhz-18',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'gaming oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/gigabyte-nvidia-geforce-rtx-3070-ti-gaming-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1830mhz',
+    },
+    {
+      brand: 'pny',
+      model: 'epic x',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/pny-nvidia-geforce-rtx-3070-ti-xlr8-gaming-revel-epic-x-8gb-gddr6x-ray-tracing-graphics-card-6144-co',
+    },
+    {
+      brand: 'zotac',
+      model: 'amp holo',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/zotac-nvidia-geforce-rtx-3070-ti-amp-holo-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1830mhz-boo',
+    },
+    {
+      brand: 'msi',
+      model: 'ventus 3x oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/msi-nvidia-geforce-rtx-3070-ti-ventus-3x-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1800mhz-b',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'aorus master',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/gigabyte-aorus-nvidia-geforce-rtx-3070-ti-master-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1875',
+    },
+    {
+      brand: 'asus',
+      model: 'gaming oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/asus-nvidia-geforce-rtx-3070-ti-tuf-gaming-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core',
+    },
+    {
+      brand: 'msi',
+      model: 'gaming x trio',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/msi-nvidia-geforce-rtx-3070-ti-gaming-x-trio-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1830mhz',
+    },
+    {
+      brand: 'asus',
+      model: 'strix oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/asus-nvidia-geforce-rtx-3070-ti-rog-strix-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core',
+    },
+    {
+      brand: 'asus',
+      model: 'strix',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/asus-nvidia-geforce-rtx-3070-ti-rog-strix-8gb-gddr6x-ray-tracing-graphics-card-6144-core',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'eagle oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/gigabyte-nvidia-geforce-rtx-3070-ti-eagle-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1800mhz',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'vision oc',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/gigabyte-nvidia-geforce-rtx-3070-ti-vision-oc-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1830mhz',
+    },
+    {
+      brand: 'msi',
+      model: 'suprim x',
+      series: '3070ti',
+      url:
+        'https://www.scan.co.uk/products/msi-nvidia-geforce-rtx-3070-ti-suprim-x-8gb-gddr6x-ray-tracing-graphics-card-6144-core-1860mhz-boost',
     },
   ],
   linksBuilder: {
@@ -81,59 +168,7 @@ export const Scan: Store = {
       urlSelector: 'a[href]',
     }),
     ttl: 300000,
-    urls: [
-      {
-        series: 'rx6800',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-amd/amd-radeon-rx-6800-pcie-40-graphics-cards',
-      },
-      {
-        series: 'rx6800xt',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-amd/amd-radeon-rx-6800-xt-pcie-40-graphics-cards',
-      },
-      {
-        series: 'rx6900xt',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-amd/amd-radeon-rx-6900-xt-pcie-40-graphics-cards',
-      },
-      {
-        series: '3060',
-        url:
-          //3060 is in gaming section not computer-hardware
-          'https://www.scan.co.uk/shop/gaming/gpu-nvidia/nvidia-geforce-rtx-3060-graphics-cards',
-      },
-      {
-        series: '3060ti',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/geforce-rtx-3060-ti-graphics-cards',
-      },
-      {
-        series: '3070',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/nvidia-geforce-rtx-3070-graphics-cards',
-      },
-	  {
-        series: '3070ti',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia-gaming/geforce-rtx-3070-ti-graphics-cards',
-      },
-      {
-        series: '3080',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/nvidia-geforce-rtx-3080-graphics-cards',
-      },
-      {
-        series: '3080ti',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia-gaming/geforce-rtx-3080-ti-graphics-cards',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/nvidia-geforce-rtx-3090-graphics-cards',
-      },
-    ],
+    urls: [],
   },
   name: 'scan',
   waitUntil: 'domcontentloaded',
