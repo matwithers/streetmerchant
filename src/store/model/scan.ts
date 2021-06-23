@@ -113,10 +113,20 @@ export const Scan: Store = {
         url:
           'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/nvidia-geforce-rtx-3070-graphics-cards',
       },
+	  {
+        series: '3070ti',
+        url:
+          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia-gaming/geforce-rtx-3070-ti-graphics-cards',
+      },
       {
         series: '3080',
         url:
           'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia/nvidia-geforce-rtx-3080-graphics-cards',
+      },
+      {
+        series: '3080ti',
+        url:
+          'https://www.scan.co.uk/shop/computer-hardware/gpu-nvidia-gaming/geforce-rtx-3080-ti-graphics-cards',
       },
       {
         series: '3090',

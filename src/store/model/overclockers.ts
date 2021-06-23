@@ -5,16 +5,16 @@ export const Overclockers: Store = {
   currency: '£',
   labels: {
     inStock: {
-      container: '#detailbox',
-      text: ['add to basket', 'in stock'],
+      container: 'a[class="buynow"]',
+      text: ['add to basket'],
     },
     maxPrice: {
       container: 'div[class="article_details_price"]',
       euroFormat: false, // Note: Overclockers uses non-euroFromat as price seperator
     },
     outOfStock: {
-      container: '#detailbox',
-      text: ['out of stock', 'pre order', 'bought to order'],
+      container: 'a[class="buynow"]',
+      text: ['see details'],
     },
   },
   links: [
@@ -53,13 +53,20 @@ export const Overclockers: Store = {
       url:
         'https://www.overclockers.co.uk/amd-ryzen-9-5950x-sixteen-core-4.9ghz-socket-am4-processor-retail-cp-3c9-am.html',
     },
+	{
+	  brand: 'zotac',
+	  model: 'trinity',
+	  series: '3070ti',
+	  url:
+	    'https://www.overclockers.co.uk/zotac-geforce-rtx-3070-ti-trinity-8gb-gddr6x-pci-express-graphics-card-gx-12p-zt.html',
+	},
   ],
   linksBuilder: {
     builder: getProductLinksBuilder({
-      productsSelector: '.ck_listing .artbox',
+      productsSelector: '.artbox',
       sitePrefix: 'https://www.overclockers.co.uk',
       titleAttribute: 'data-description',
-      titleSelector: 'a[href].producttitles',
+      titleSelector: '.producttitles',
     }),
     urls: [
       {
@@ -93,12 +100,22 @@ export const Overclockers: Store = {
           'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3070',
       },
       {
+        series: '3070ti',
+        url:
+          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3070-ti',
+      },
+      {
         series: '3080',
         // Need to add support to detect pagination so this can be dynamically detected
         url: [
           'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080',
           'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080?p=2',
         ],
+      },
+      {
+        series: '3080ti',
+        url:
+          'https://www.overclockers.co.uk/pc-components/graphics-cards/nvidia/geforce-rtx-3080-ti',
       },
       {
         series: '3090',

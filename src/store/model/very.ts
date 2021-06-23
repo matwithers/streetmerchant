@@ -80,7 +80,17 @@ export const Very: Store = {
           'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
       },
       {
+        series: '3070ti',
+        url:
+          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
+      },
+      {
         series: '3080',
+        url:
+          'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
+      },
+      {
+        series: '3080ti',
         url:
           'https://www.very.co.uk/electricals/pc-components/graphics-cards/e/b/118786.end?sort=newin,0&numProducts=100',
       },

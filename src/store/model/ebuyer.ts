@@ -125,9 +125,19 @@ export const Ebuyer: Store = {
           'https://www.ebuyer.com/store/Components/cat/Graphics-Cards-Nvidia/subcat/GeForce-RTX-3070',
       },
       {
+        series: '3070ti',
+        url:
+          'https://www.ebuyer.com/store/Components/cat/Graphics-Cards-Nvidia/subcat/GeForce-RTX-3070-Ti',
+      },
+      {
         series: '3080',
         url:
           'https://www.ebuyer.com/store/Components/cat/Graphics-Cards-Nvidia/subcat/GeForce-RTX-3080',
+      },
+      {
+        series: '3080ti',
+        url:
+          'https://www.ebuyer.com/store/Components/cat/Graphics-Cards-Nvidia/subcat/GeForce-RTX-3080-Ti',
       },
       {
         series: '3090',

@@ -35,7 +35,7 @@ export const Aria: Store = {
   ],
   linksBuilder: {
     builder: getProductLinksBuilder({
-      productsSelector: '#productListingInner .listTable .listTableTr',
+      productsSelector: '.listTableTr',
       sitePrefix: 'https://www.aria.co.uk',
       titleSelector: 'strong > a[href]',
     }),
@@ -56,9 +56,19 @@ export const Aria: Store = {
           'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070',
       },
       {
+        series: '3070ti',
+        url:
+          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3070+Ti',
+      },
+      {
         series: '3080',
         url:
           'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3080',
+      },
+      {
+        series: '3080ti',
+        url:
+          'https://www.aria.co.uk/Products/Components/Graphics+Cards/NVIDIA+GeForce/GeForce+RTX+3080i+Ti',
       },
       {
         series: '3090',

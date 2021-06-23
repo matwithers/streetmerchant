@@ -70,27 +70,37 @@ export const Novatech: Store = {
       {
         series: '3060',
         url:
-          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3060/?i=200',
-      },
-      {
-        series: '3060ti',
-        url:
-          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3060ti/?i=200',
-      },
-      {
-        series: '3080',
-        url:
-          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3080/?i=200',
-      },
-      {
-        series: '3090',
-        url:
-          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3090/?i=200',
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3060/',
       },
       {
         series: '3060ti',
         url:
           'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3060ti/',
+      },
+      {
+        series: '3070',
+        url:
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3070/',
+      },
+      {
+        series: '3070ti',
+        url:
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3070ti/',
+      },
+      {
+        series: '3080',
+        url:
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3080/',
+      },
+      {
+        series: '3080ti',
+        url:
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3080ti/',
+      },
+      {
+        series: '3090',
+        url:
+          'https://www.novatech.co.uk/products/components/nvidiageforcegraphicscards/nvidiartxseries/nvidiartx3090/?i=200',
       },
     ],
   },
