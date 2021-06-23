@@ -5,16 +5,16 @@ export const Overclockers: Store = {
   currency: '£',
   labels: {
     inStock: {
-      container: 'a[class="buynow"]',
-      text: ['add to basket'],
+      container: '#detailbox',
+      text: ['add to basket', 'in stock'],
     },
     maxPrice: {
       container: 'div[class="article_details_price"]',
       euroFormat: false, // Note: Overclockers uses non-euroFromat as price seperator
     },
     outOfStock: {
-      container: 'a[class="buynow"]',
-      text: ['see details'],
+      container: '#detailbox',
+      text: ['out of stock', 'pre order', 'bought to order'],
     },
   },
   links: [
